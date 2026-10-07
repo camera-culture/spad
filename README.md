@@ -20,7 +20,7 @@ in Settings → Pages, choosing that branch and folder. `index.html` is the entr
 | data.html | Datasets, including DENALI |
 | media.html | Press and talks |
 | events.html | Talks, awards and dates |
-| sponsors.html | Funding |
+| Collaborators.html | Funding and industry collaborators |
 | challenge.html | All-Photon Perception Challenge |
 
 No build step and no framework. Every page is self-contained apart from the Google Fonts
