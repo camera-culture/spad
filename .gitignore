@@ -1,0 +1,21 @@
+# Claude / AI tooling
+.claude/
+.claude-*/
+CLAUDE.md
+CLAUDE.local.md
+**/CLAUDE.md
+**/CLAUDE.local.md
+.mcp.json
+.planning/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Dependencies / build output
+node_modules/
