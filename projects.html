@@ -9,38 +9,27 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
-body{margin:0;background:#F5F2EB;color:#171512;-webkit-font-smoothing:antialiased}
-a{color:#8A5F0B}
-a:hover{color:#171512}
-input::placeholder{color:#A39B8A}
-.prow:hover{background:#EFEBE1}
+body { margin:0; background:#F5F2EB; color:#171512; -webkit-font-smoothing:antialiased; }
+a { color:#8A5F0B; }
+a:hover { color:#171512; }
 .hv1:hover{color:#171512 !important;border-bottom:1px solid #8A5F0B !important}
 .hv2:hover{background:#8A5F0B !important;color:#FBF9F4 !important;border:1px solid #8A5F0B !important}
 .hv3:hover{color:#D9A63C !important}
 .hv4:hover{color:#EFEAE0 !important}
-.hv5:hover{background:#F4EFE5 !important;color:#14120E !important;border:1px solid #F4EFE5 !important}
-.hv6:hover{background:#F4EFE5 !important}
-.hv7:hover{border:1px solid #F4EFE5 !important}
-.hv8:hover{background:#EFEBE1 !important}
-.hv9:hover{background:#E9E3D6 !important}
-.hv10:hover{color:#8A5F0B !important}
-.hv11:hover{color:#171512 !important}
-.hv12:hover{background:#EFEAE0 !important}
-.hv13:hover{background:#8A5F0B !important}
-.hv14:hover{border:1px solid #171512 !important}
 </style>
 <script src="reveal.js" defer></script>
-
+<link rel="stylesheet" href="mobile.css">
 </head>
 <body>
 <div style="background:#F5F2EB">
   <div style="position:sticky;top:0;z-index:50;background:rgba(245,242,235,0.92);backdrop-filter:blur(10px);border-bottom:1px solid #E2DBCC">
-  <div style="max-width:1180px;margin:0 auto;padding:0 32px;display:flex;align-items:center;gap:32px;min-height:60px;flex-wrap:wrap">
+  <div data-m="navbar px" style="max-width:1180px;margin:0 auto;padding:0 32px;display:flex;align-items:center;gap:32px;min-height:60px;flex-wrap:wrap">
     <a href="index.html" style="display:flex;align-items:baseline;gap:9px;text-decoration:none;color:#171512;flex:0 0 auto">
       <span style="font-family:Newsreader,Georgia,serif;font-size:19px;font-weight:500;letter-spacing:-0.01em;white-space:nowrap">Single Photons</span>
       <span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:#6F6858">MIT</span>
     </a>
-    <nav style="display:flex;align-items:center;gap:17px;margin-left:auto;flex-wrap:wrap;row-gap:8px">
+    <button data-m="navbtn" type="button" id="navbtn" aria-expanded="false" aria-label="Toggle menu" style="display:none;margin-left:auto;align-items:center;min-height:44px;padding:0 4px;background:transparent;border:0;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#171512;cursor:pointer">Menu</button>
+    <nav data-m="nav" id="sitenav" data-open="false" style="display:flex;align-items:center;gap:17px;margin-left:auto;flex-wrap:wrap;row-gap:8px">
       <a data-nav="Projects" href="projects.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;letter-spacing:0.01em;color:#4A453B;text-decoration:none;padding:4px 0;border-bottom:1px solid transparent;white-space:nowrap" class="hv1">Projects</a>
       <a data-nav="Papers" href="papers.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;color:#4A453B;text-decoration:none;padding:4px 0;border-bottom:1px solid transparent;white-space:nowrap" class="hv1">Papers</a>
       <a data-nav="SPAD Kit" href="spad-kit.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;color:#4A453B;text-decoration:none;padding:4px 0;border-bottom:1px solid transparent;white-space:nowrap" class="hv1">SPAD Kit</a>
@@ -53,17 +42,17 @@ input::placeholder{color:#A39B8A}
   </div>
 </div>
 
-  <section style="max-width:1180px;margin:0 auto;padding:88px 32px 0">
+  <section data-m="px" style="max-width:1180px;margin:0 auto;padding:88px 32px 0">
     <span style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#6F6858">Research threads</span>
     <h1 style="font-family:Newsreader,Georgia,serif;font-weight:400;font-size:clamp(38px,5.2vw,68px);line-height:1.04;letter-spacing:-0.025em;margin:20px 0 0">Projects</h1>
     <p style="font-family:Newsreader,Georgia,serif;font-size:19px;line-height:1.55;color:#3E3931;margin:22px 0 0;max-width:64ch;text-wrap:pretty">The group's research, grouped by the question each line of work pursues. For the complete publication record, see <a href="papers.html" style="color:#8A5F0B">Papers</a>.</p>
   </section>
 
-  <section style="max-width:1180px;margin:72px auto 0;padding:0 32px;display:flex;flex-direction:column;gap:0">
+  <section data-m="px" style="max-width:1180px;margin:72px auto 0;padding:0 32px;display:flex;flex-direction:column;gap:0">
 
-    <div style="display:grid;grid-template-columns:minmax(0,420px) minmax(0,1fr);gap:48px;padding:44px 0;border-top:1px solid #171512;align-items:start">
+    <div data-m="stack" style="display:grid;grid-template-columns:minmax(0,420px) minmax(0,1fr);gap:48px;padding:44px 0;border-top:1px solid #171512;align-items:start">
       <div style="aspect-ratio:16/10;background:#E6E0D3;border:1px solid #E2DBCC;overflow:hidden">
-        <img src="https://photons.media.mit.edu/assets/img/projects/nlos_track.gif" alt="Tracking a hidden object around a corner" style="width:100%;height:100%;object-fit:cover;display:block">
+        <img src="assets/projects/seeing-around-corners.png?v=2" alt="A person scans a room with a phone; the light bounces off a wall and around a partition to reach a hidden dog" style="width:100%;height:100%;object-fit:cover;display:block">
       </div>
       <div>
         <div style="display:flex;gap:20px;flex-wrap:wrap;font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;color:#6F6858">
@@ -78,9 +67,9 @@ input::placeholder{color:#A39B8A}
       </div>
     </div>
 
-    <div style="display:grid;grid-template-columns:minmax(0,420px) minmax(0,1fr);gap:48px;padding:44px 0;border-top:1px solid #E2DBCC;align-items:start">
-      <div style="aspect-ratio:16/10;background:#E6E0D3;border:1px solid #E2DBCC;display:flex;align-items:center;justify-content:center;padding:22px">
-        <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.1em;text-transform:uppercase;color:#5A544A;text-align:center;line-height:1.7">Image needed<br>femto-photography frame</span>
+    <div data-m="stack" style="display:grid;grid-template-columns:minmax(0,420px) minmax(0,1fr);gap:48px;padding:44px 0;border-top:1px solid #E2DBCC;align-items:start">
+      <div style="aspect-ratio:16/10;background:#0B0A09;border:1px solid #E2DBCC;overflow:hidden">
+        <img src="assets/projects/light-in-flight.png" alt="Femto-photography: a light pulse in flight, captured at an effective trillion frames per second" style="width:100%;height:100%;object-fit:contain;display:block">
       </div>
       <div>
         <div style="display:flex;gap:20px;flex-wrap:wrap;font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;color:#6F6858">
@@ -95,9 +84,9 @@ input::placeholder{color:#A39B8A}
       </div>
     </div>
 
-    <div style="display:grid;grid-template-columns:minmax(0,420px) minmax(0,1fr);gap:48px;padding:44px 0;border-top:1px solid #E2DBCC;align-items:start">
+    <div data-m="stack" style="display:grid;grid-template-columns:minmax(0,420px) minmax(0,1fr);gap:48px;padding:44px 0;border-top:1px solid #E2DBCC;align-items:start">
       <div style="aspect-ratio:16/10;background:#E6E0D3;border:1px solid #E2DBCC;overflow:hidden">
-        <img src="https://photons.media.mit.edu/assets/img/projects/bls3d.gif" alt="Handheld 3D scanning with diffuse LiDAR" style="width:100%;height:100%;object-fit:cover;display:block">
+        <img src="assets/projects/commodity-3d.png" alt="A handheld sensor scanning objects on a table into a colored 3D point cloud" style="width:100%;height:100%;object-fit:cover;display:block">
       </div>
       <div>
         <div style="display:flex;gap:20px;flex-wrap:wrap;font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;color:#6F6858">
@@ -112,9 +101,9 @@ input::placeholder{color:#A39B8A}
       </div>
     </div>
 
-    <div style="display:grid;grid-template-columns:minmax(0,420px) minmax(0,1fr);gap:48px;padding:44px 0;border-top:1px solid #E2DBCC;align-items:start">
-      <div style="aspect-ratio:16/10;background:#E6E0D3;border:1px solid #E2DBCC;overflow:hidden">
-        <img src="https://photons.media.mit.edu/assets/img/projects/snowpack.png" alt="Time-domain diffuse optics measurement of snowpack" style="width:100%;height:100%;object-fit:cover;display:block">
+    <div data-m="stack" style="display:grid;grid-template-columns:minmax(0,420px) minmax(0,1fr);gap:48px;padding:44px 0;border-top:1px solid #E2DBCC;align-items:start">
+      <div style="aspect-ratio:3600/1960;background:#E6E0D3;border:1px solid #E2DBCC;overflow:hidden">
+        <img src="assets/projects/scattering-fog.png" alt="Imaging a hidden scene through fog" style="width:100%;height:100%;object-fit:cover;display:block">
       </div>
       <div>
         <div style="display:flex;gap:20px;flex-wrap:wrap;font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;color:#6F6858">
@@ -129,9 +118,9 @@ input::placeholder{color:#A39B8A}
       </div>
     </div>
 
-    <div style="display:grid;grid-template-columns:minmax(0,420px) minmax(0,1fr);gap:48px;padding:44px 0;border-top:1px solid #E2DBCC;align-items:start">
+    <div data-m="stack" style="display:grid;grid-template-columns:minmax(0,420px) minmax(0,1fr);gap:48px;padding:44px 0;border-top:1px solid #E2DBCC;align-items:start">
       <div style="aspect-ratio:16/10;background:#E6E0D3;border:1px solid #E2DBCC;overflow:hidden">
-        <img src="https://photons.media.mit.edu/assets/img/projects/bounceflash.gif" alt="Bounce-flash LiDAR capture" style="width:100%;height:100%;object-fit:cover;display:block">
+        <img src="assets/projects/time-of-flight.png" alt="A handheld time-of-flight sensor emitting light pulses that spread through a room, with the returned photon histogram on a screen" style="width:100%;height:100%;object-fit:cover;display:block">
       </div>
       <div>
         <div style="display:flex;gap:20px;flex-wrap:wrap;font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;color:#6F6858">
@@ -146,9 +135,9 @@ input::placeholder{color:#A39B8A}
       </div>
     </div>
 
-    <div style="display:grid;grid-template-columns:minmax(0,420px) minmax(0,1fr);gap:48px;padding:44px 0;border-top:1px solid #E2DBCC;border-bottom:1px solid #E2DBCC;align-items:start">
-      <div style="aspect-ratio:16/10;background:#E6E0D3;border:1px solid #E2DBCC;display:flex;align-items:center;justify-content:center;padding:22px">
-        <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.1em;text-transform:uppercase;color:#5A544A;text-align:center;line-height:1.7">Image needed<br>DISeR figure</span>
+    <div data-m="stack" style="display:grid;grid-template-columns:minmax(0,420px) minmax(0,1fr);gap:48px;padding:44px 0;border-top:1px solid #E2DBCC;border-bottom:1px solid #E2DBCC;align-items:start">
+      <div style="aspect-ratio:1880/608;align-self:center;background:#FFFFFF;border:1px solid #E2DBCC;overflow:hidden">
+        <img src="assets/projects/sensor-design.png" alt="Three task-driven LiDAR designs: flash LiDAR on a phone, distributed LiDAR around a robot arm, and adaptive LiDAR on floor robots" style="width:100%;height:100%;object-fit:cover;display:block">
       </div>
       <div>
         <div style="display:flex;gap:20px;flex-wrap:wrap;font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;color:#6F6858">
@@ -165,9 +154,9 @@ input::placeholder{color:#A39B8A}
 
   </section>
 
-  <div style="height:104px"></div>
-  <footer style="background:#14120E;color:#EFEAE0;padding:64px 32px 40px">
-  <div style="max-width:1180px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr) minmax(0,1fr);gap:48px">
+  <div data-m="spacer" style="height:104px"></div>
+  <footer data-m="px" style="background:#14120E;color:#EFEAE0;padding:64px 32px 40px">
+  <div data-m="stack" style="max-width:1180px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr) minmax(0,1fr);gap:48px">
     <div>
       <div style="font-family:Newsreader,Georgia,serif;font-size:22px;font-weight:500;letter-spacing:-0.01em">Extreme Sensing with Single Photons</div>
       <p style="font-family:Newsreader,Georgia,serif;font-size:15px;line-height:1.6;color:#9A9384;max-width:34ch;margin:14px 0 0">Camera Culture Group, MIT Media Lab. Transient, time-of-flight and single-photon imaging research.</p>
@@ -195,15 +184,14 @@ input::placeholder{color:#A39B8A}
   </div>
 </footer>
 </div>
-
 <script>
 (function(){
   var page=(location.pathname.split('/').pop()||'index.html')||'index.html';
   [].slice.call(document.querySelectorAll('nav a[data-nav]')).forEach(function(a){
-    if(a.getAttribute('href')===page&&a.getAttribute('data-nav')!=='Challenge'){
-      a.style.color='#171512';a.style.borderBottom='1px solid #8A5F0B';
-    }
+    if(a.getAttribute('href')===page&&a.getAttribute('data-nav')!=='Challenge'){a.style.color='#171512';a.style.borderBottom='1px solid #8A5F0B';}
   });
+  var b=document.getElementById('navbtn'),n=document.getElementById('sitenav');
+  if(b&&n)b.onclick=function(){var o=n.getAttribute('data-open')!=='true';n.setAttribute('data-open',o?'true':'false');b.setAttribute('aria-expanded',o?'true':'false');b.textContent=o?'Close':'Menu';};
 })();
 </script>
 </body>

@@ -28,38 +28,44 @@ input::placeholder{color:#A39B8A}
 .hv12:hover{background:#EFEAE0 !important}
 .hv13:hover{background:#8A5F0B !important}
 .hv14:hover{border:1px solid #171512 !important}
+.hv101:hover{color:#171512 !important;border-bottom:1px solid #8A5F0B !important}
+.hv102:hover{background:#8A5F0B !important;color:#FBF9F4 !important;border:1px solid #8A5F0B !important}
+.hv103:hover{color:#D9A63C !important}
+.hv104:hover{color:#EFEAE0 !important}
 </style>
 <script src="reveal.js" defer></script>
 
+<link rel="stylesheet" href="mobile.css">
 </head>
 <body>
 <div style="background:#F5F2EB">
   <div style="position:sticky;top:0;z-index:50;background:rgba(245,242,235,0.92);backdrop-filter:blur(10px);border-bottom:1px solid #E2DBCC">
-  <div style="max-width:1180px;margin:0 auto;padding:0 32px;display:flex;align-items:center;gap:32px;min-height:60px;flex-wrap:wrap">
+  <div data-m="navbar px" style="max-width:1180px;margin:0 auto;padding:0 32px;display:flex;align-items:center;gap:32px;min-height:60px;flex-wrap:wrap">
     <a href="index.html" style="display:flex;align-items:baseline;gap:9px;text-decoration:none;color:#171512;flex:0 0 auto">
       <span style="font-family:Newsreader,Georgia,serif;font-size:19px;font-weight:500;letter-spacing:-0.01em;white-space:nowrap">Single Photons</span>
       <span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:#6F6858">MIT</span>
     </a>
-    <nav style="display:flex;align-items:center;gap:17px;margin-left:auto;flex-wrap:wrap;row-gap:8px">
-      <a data-nav="Projects" href="projects.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;letter-spacing:0.01em;color:#4A453B;text-decoration:none;padding:4px 0;border-bottom:1px solid transparent;white-space:nowrap" class="hv1">Projects</a>
-      <a data-nav="Papers" href="papers.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;color:#4A453B;text-decoration:none;padding:4px 0;border-bottom:1px solid transparent;white-space:nowrap" class="hv1">Papers</a>
-      <a data-nav="SPAD Kit" href="spad-kit.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;color:#4A453B;text-decoration:none;padding:4px 0;border-bottom:1px solid transparent;white-space:nowrap" class="hv1">SPAD Kit</a>
-      <a data-nav="Resources" href="resources.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;color:#4A453B;text-decoration:none;padding:4px 0;border-bottom:1px solid transparent;white-space:nowrap" class="hv1">Resources</a>
-      <a data-nav="Media" href="media.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;color:#4A453B;text-decoration:none;padding:4px 0;border-bottom:1px solid transparent;white-space:nowrap" class="hv1">Media</a>
-      <a data-nav="Events" href="events.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;color:#4A453B;text-decoration:none;padding:4px 0;border-bottom:1px solid transparent;white-space:nowrap" class="hv1">Events</a>
-      <a data-nav="Sponsors" href="Collaborators.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;color:#4A453B;text-decoration:none;padding:4px 0;border-bottom:1px solid transparent;white-space:nowrap" class="hv1">Collaborators</a>
-      <a data-nav="Challenge" href="challenge.html" style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:#8A5F0B;text-decoration:none;border:1px solid #DCCBA6;padding:6px 11px;border-radius:2px;white-space:nowrap" class="hv2">CVPR Challenge</a>
+    <button data-m="navbtn" type="button" id="navbtn" aria-expanded="false" aria-label="Toggle menu" style="display:none;margin-left:auto;align-items:center;min-height:44px;padding:0 4px;background:transparent;border:0;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#171512;cursor:pointer">Menu</button>
+    <nav data-m="nav" id="sitenav" data-open="false" style="display:flex;align-items:center;gap:17px;margin-left:auto;flex-wrap:wrap;row-gap:8px">
+      <a data-nav="Projects" href="projects.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;letter-spacing:0.01em;color:#4A453B;text-decoration:none;padding:4px 0;border-bottom:1px solid transparent;white-space:nowrap" class="hv101">Projects</a>
+      <a data-nav="Papers" href="papers.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;color:#4A453B;text-decoration:none;padding:4px 0;border-bottom:1px solid transparent;white-space:nowrap" class="hv101">Papers</a>
+      <a data-nav="SPAD Kit" href="spad-kit.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;color:#4A453B;text-decoration:none;padding:4px 0;border-bottom:1px solid transparent;white-space:nowrap" class="hv101">SPAD Kit</a>
+      <a data-nav="Resources" href="resources.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;color:#4A453B;text-decoration:none;padding:4px 0;border-bottom:1px solid transparent;white-space:nowrap" class="hv101">Resources</a>
+      <a data-nav="Media" href="media.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;color:#4A453B;text-decoration:none;padding:4px 0;border-bottom:1px solid transparent;white-space:nowrap" class="hv101">Media</a>
+      <a data-nav="Events" href="events.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;color:#4A453B;text-decoration:none;padding:4px 0;border-bottom:1px solid transparent;white-space:nowrap" class="hv101">Events</a>
+      <a data-nav="Sponsors" href="Collaborators.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;color:#4A453B;text-decoration:none;padding:4px 0;border-bottom:1px solid transparent;white-space:nowrap" class="hv101">Collaborators</a>
+      <a data-nav="Challenge" href="challenge.html" style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:#8A5F0B;text-decoration:none;border:1px solid #DCCBA6;padding:6px 11px;border-radius:2px;white-space:nowrap" class="hv102">CVPR Challenge</a>
     </nav>
   </div>
 </div>
 
-  <section style="max-width:1180px;margin:0 auto;padding:88px 32px 0">
+  <section data-m="px" style="max-width:1180px;margin:0 auto;padding:88px 32px 0">
     
     <h1 style="font-family:Newsreader,Georgia,serif;font-weight:400;font-size:clamp(38px,5.2vw,68px);line-height:1.04;letter-spacing:-0.025em;margin:20px 0 0">Papers</h1>
     <p style="font-family:Newsreader,Georgia,serif;font-size:19px;line-height:1.55;color:#3E3931;margin:22px 0 0;max-width:62ch;text-wrap:pretty">All single-photon imaging papers published by the Camera Culture Group.</p>
   </section>
 
-  <section style="max-width:1180px;margin:52px auto 0;padding:0 32px">
+  <section data-m="px" style="max-width:1180px;margin:52px auto 0;padding:0 32px">
     <div style="display:flex;gap:20px;align-items:center;flex-wrap:wrap;padding-bottom:16px;border-bottom:1px solid #171512">
       <div style="display:flex;gap:8px;flex-wrap:wrap">
         <button data-filter="all" class="chip" style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;border-radius:2px;padding:7px 12px">All</button>
@@ -72,7 +78,7 @@ input::placeholder{color:#A39B8A}
         <button data-filter="lowlight" class="chip" style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;border-radius:2px;padding:7px 12px">Low-light</button>
         <button data-filter="systems" class="chip" style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;border-radius:2px;padding:7px 12px">Sensor design</button>
       </div>
-      <input id="q" type="search" placeholder="Search titles, authors, venues" style="margin-left:auto;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;color:#171512;background:transparent;border:1px solid #D6CEBC;border-radius:2px;padding:9px 12px;min-width:250px;outline:none">
+      <input id="q" type="search" placeholder="Search titles, authors, venues" style="margin-left:auto;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;color:#171512;background:transparent;border:1px solid #D6CEBC;border-radius:2px;padding:9px 12px;min-width:min(250px,100%);outline:none">
     </div>
 
     <div style="display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin:18px 0 0;font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;color:#6F6858">
@@ -81,7 +87,7 @@ input::placeholder{color:#A39B8A}
     </div>
 
     <div id="list" style="display:flex;flex-direction:column">
-<a href="https://www.nature.com/articles/s41586-026-10502-x" class="prow" data-topics="nlos" data-sort="202612" data-text="imaging hidden objects with consumer lidar via motion induced sampling siddharth somasundaram, aaron young, akshat dave, adithya pediredla, ramesh raskar nature" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2026</span>
+<a href="https://www.nature.com/articles/s41586-026-10502-x" class="prow" data-topics="nlos" data-sort="202612" data-text="imaging hidden objects with consumer lidar via motion induced sampling siddharth somasundaram, aaron young, akshat dave, adithya pediredla, ramesh raskar nature" data-m="row" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2026</span>
       <div>
         <h3 style="font-family:Newsreader,Georgia,serif;font-weight:500;font-size:20px;line-height:1.28;letter-spacing:-0.01em;margin:0 0 6px;text-wrap:pretty">Imaging hidden objects with consumer LiDAR via motion induced sampling</h3>
         <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12.5px;line-height:1.55;color:#6C6558;margin:0">Siddharth Somasundaram, Aaron Young, Akshat Dave, Adithya Pediredla, Ramesh Raskar</p>
@@ -90,7 +96,7 @@ input::placeholder{color:#A39B8A}
         <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:#4A453B">Nature</span>
         <span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#8A5F0B"></span>
       </div></a>
-<a href="https://nikhilbehari.com/denali/" class="prow" data-topics="nlos" data-sort="202607" data-text="denali: a dataset enabling non-line-of-sight spatial reasoning with low-cost lidars nikhil behari, diego rivero, luke apostolides, suman ghosh, paul pu liang, ramesh raskar cvpr" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2026</span>
+<a href="https://nikhilbehari.com/denali/" class="prow" data-topics="nlos" data-sort="202607" data-text="denali: a dataset enabling non-line-of-sight spatial reasoning with low-cost lidars nikhil behari, diego rivero, luke apostolides, suman ghosh, paul pu liang, ramesh raskar cvpr" data-m="row" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2026</span>
       <div>
         <h3 style="font-family:Newsreader,Georgia,serif;font-weight:500;font-size:20px;line-height:1.28;letter-spacing:-0.01em;margin:0 0 6px;text-wrap:pretty">DENALI: A Dataset Enabling Non-Line-of-Sight Spatial Reasoning with Low-Cost LiDARs</h3>
         <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12.5px;line-height:1.55;color:#6C6558;margin:0">Nikhil Behari, Diego Rivero, Luke Apostolides, Suman Ghosh, Paul Pu Liang, Ramesh Raskar</p>
@@ -99,7 +105,7 @@ input::placeholder{color:#A39B8A}
         <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:#4A453B">CVPR</span>
         <span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#8A5F0B">Highlight · Compute Transparency Champion</span>
       </div></a>
-<a href="https://nikhilbehari.com/implicitlidar/" class="prow" data-topics="systems" data-sort="202606" data-text="task-driven implicit representations for automated design of lidar systems nikhil behari, aaron young, tzofi klinghoffer, akshat dave, ramesh raskar cvpr" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2026</span>
+<a href="https://nikhilbehari.com/implicitlidar/" class="prow" data-topics="systems" data-sort="202606" data-text="task-driven implicit representations for automated design of lidar systems nikhil behari, aaron young, tzofi klinghoffer, akshat dave, ramesh raskar cvpr" data-m="row" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2026</span>
       <div>
         <h3 style="font-family:Newsreader,Georgia,serif;font-weight:500;font-size:20px;line-height:1.28;letter-spacing:-0.01em;margin:0 0 6px;text-wrap:pretty">Task-Driven Implicit Representations for Automated Design of LiDAR Systems</h3>
         <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12.5px;line-height:1.55;color:#6C6558;margin:0">Nikhil Behari, Aaron Young, Tzofi Klinghoffer, Akshat Dave, Ramesh Raskar</p>
@@ -108,7 +114,7 @@ input::placeholder{color:#A39B8A}
         <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:#4A453B">CVPR</span>
         <span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#8A5F0B"></span>
       </div></a>
-<a href="https://link.springer.com/chapter/10.1007/978-3-032-37020-4_8" class="prow" data-topics="highspeed" data-sort="202601" data-text="spatiotemporal flux probing for single-photon videography jerry yan, matteo forlivesi, bowen tan, a. xie, siddharth somasundaram, sotiris nousias eccv" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2026</span>
+<a href="https://link.springer.com/chapter/10.1007/978-3-032-37020-4_8" class="prow" data-topics="highspeed" data-sort="202601" data-text="spatiotemporal flux probing for single-photon videography jerry yan, matteo forlivesi, bowen tan, a. xie, siddharth somasundaram, sotiris nousias eccv" data-m="row" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2026</span>
       <div>
         <h3 style="font-family:Newsreader,Georgia,serif;font-weight:500;font-size:20px;line-height:1.28;letter-spacing:-0.01em;margin:0 0 6px;text-wrap:pretty">Spatiotemporal Flux Probing for Single-Photon Videography</h3>
         <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12.5px;line-height:1.55;color:#6C6558;margin:0">Jerry Yan, Matteo Forlivesi, Bowen Tan, A. Xie, Siddharth Somasundaram, Sotiris Nousias</p>
@@ -117,7 +123,7 @@ input::placeholder{color:#A39B8A}
         <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:#4A453B">ECCV</span>
         <span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#8A5F0B"></span>
       </div></a>
-<a href="https://arxiv.org/abs/2411.19474" class="prow" data-topics="3d" data-sort="202506" data-text="blurred lidar for sharper 3d: robust handheld 3d scanning with diffuse lidar and rgb nikhil behari, aaron young, siddharth somasundaram, tzofi klinghoffer, akshat dave, ramesh raskar cvpr" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2025</span>
+<a href="https://arxiv.org/abs/2411.19474" class="prow" data-topics="3d" data-sort="202506" data-text="blurred lidar for sharper 3d: robust handheld 3d scanning with diffuse lidar and rgb nikhil behari, aaron young, siddharth somasundaram, tzofi klinghoffer, akshat dave, ramesh raskar cvpr" data-m="row" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2025</span>
       <div>
         <h3 style="font-family:Newsreader,Georgia,serif;font-weight:500;font-size:20px;line-height:1.28;letter-spacing:-0.01em;margin:0 0 6px;text-wrap:pretty">Blurred LiDAR for Sharper 3D: Robust Handheld 3D Scanning with Diffuse LiDAR and RGB</h3>
         <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12.5px;line-height:1.55;color:#6C6558;margin:0">Nikhil Behari, Aaron Young, Siddharth Somasundaram, Tzofi Klinghoffer, Akshat Dave, Ramesh Raskar</p>
@@ -126,7 +132,7 @@ input::placeholder{color:#A39B8A}
         <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:#4A453B">CVPR</span>
         <span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#8A5F0B"></span>
       </div></a>
-<a href="https://arxiv.org/abs/2410.03555" class="prow" data-topics="nlos" data-sort="202505" data-text="enhancing autonomous navigation by imaging hidden objects using single-photon lidar aaron young, nevindu m. batagoda, harry zhang, akshat dave, adithya pediredla, dan negrut, ramesh raskar icra" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2025</span>
+<a href="https://arxiv.org/abs/2410.03555" class="prow" data-topics="nlos" data-sort="202505" data-text="enhancing autonomous navigation by imaging hidden objects using single-photon lidar aaron young, nevindu m. batagoda, harry zhang, akshat dave, adithya pediredla, dan negrut, ramesh raskar icra" data-m="row" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2025</span>
       <div>
         <h3 style="font-family:Newsreader,Georgia,serif;font-weight:500;font-size:20px;line-height:1.28;letter-spacing:-0.01em;margin:0 0 6px;text-wrap:pretty">Enhancing Autonomous Navigation by Imaging Hidden Objects using Single-Photon LiDAR</h3>
         <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12.5px;line-height:1.55;color:#6C6558;margin:0">Aaron Young, Nevindu M. Batagoda, Harry Zhang, Akshat Dave, Adithya Pediredla, Dan Negrut, Ramesh Raskar</p>
@@ -135,7 +141,7 @@ input::placeholder{color:#A39B8A}
         <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:#4A453B">ICRA</span>
         <span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#8A5F0B"></span>
       </div></a>
-<a href="https://ieeexplore.ieee.org/document/11045277" class="prow" data-topics="highspeed lowlight" data-sort="202503" data-text="event cameras meet spads for high-speed, low-bandwidth imaging manasi muglikar, siddharth somasundaram, akshat dave, edoardo charbon, ramesh raskar, davide scaramuzza ieee tpami" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2025</span>
+<a href="https://ieeexplore.ieee.org/document/11045277" class="prow" data-topics="highspeed lowlight" data-sort="202503" data-text="event cameras meet spads for high-speed, low-bandwidth imaging manasi muglikar, siddharth somasundaram, akshat dave, edoardo charbon, ramesh raskar, davide scaramuzza ieee tpami" data-m="row" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2025</span>
       <div>
         <h3 style="font-family:Newsreader,Georgia,serif;font-weight:500;font-size:20px;line-height:1.28;letter-spacing:-0.01em;margin:0 0 6px;text-wrap:pretty">Event Cameras Meet SPADs for High-Speed, Low-Bandwidth Imaging</h3>
         <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12.5px;line-height:1.55;color:#6C6558;margin:0">Manasi Muglikar, Siddharth Somasundaram, Akshat Dave, Edoardo Charbon, Ramesh Raskar, Davide Scaramuzza</p>
@@ -144,7 +150,7 @@ input::placeholder{color:#A39B8A}
         <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:#4A453B">IEEE TPAMI</span>
         <span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#8A5F0B"></span>
       </div></a>
-<a href="https://www.cambridge.org/core/journals/journal-of-glaciology/article/measurement-of-snowpack-density-grain-size-and-black-carbon-concentration-using-timedomain-diffuse-optics/FB7575CDBCA8EF4088F985411D96907F" class="prow" data-topics="scattering" data-sort="202501" data-text="measurement of snowpack density, grain size, and black carbon concentration using time-domain diffuse optics connor andrew henley, colin richard meyer, jacob ian chalif, joseph lee hollmann, ramesh raskar journal of glaciology" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2025</span>
+<a href="https://www.cambridge.org/core/journals/journal-of-glaciology/article/measurement-of-snowpack-density-grain-size-and-black-carbon-concentration-using-timedomain-diffuse-optics/FB7575CDBCA8EF4088F985411D96907F" class="prow" data-topics="scattering" data-sort="202501" data-text="measurement of snowpack density, grain size, and black carbon concentration using time-domain diffuse optics connor andrew henley, colin richard meyer, jacob ian chalif, joseph lee hollmann, ramesh raskar journal of glaciology" data-m="row" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2025</span>
       <div>
         <h3 style="font-family:Newsreader,Georgia,serif;font-weight:500;font-size:20px;line-height:1.28;letter-spacing:-0.01em;margin:0 0 6px;text-wrap:pretty">Measurement of snowpack density, grain size, and black carbon concentration using time-domain diffuse optics</h3>
         <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12.5px;line-height:1.55;color:#6C6558;margin:0">Connor Andrew Henley, Colin Richard Meyer, Jacob Ian Chalif, Joseph Lee Hollmann, Ramesh Raskar</p>
@@ -153,7 +159,7 @@ input::placeholder{color:#A39B8A}
         <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:#4A453B">Journal of Glaciology</span>
         <span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#8A5F0B"></span>
       </div></a>
-<a href="https://lidarmirror.github.io" class="prow" data-topics="3d" data-sort="202407" data-text="handheld mapping of specular surfaces using consumer-grade flash lidar tsung-han (hank) lin, connor henley, siddharth somasundaram, akshat dave, moshe laifenfeld, ramesh raskar iccp" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2024</span>
+<a href="https://lidarmirror.github.io" class="prow" data-topics="3d" data-sort="202407" data-text="handheld mapping of specular surfaces using consumer-grade flash lidar tsung-han (hank) lin, connor henley, siddharth somasundaram, akshat dave, moshe laifenfeld, ramesh raskar iccp" data-m="row" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2024</span>
       <div>
         <h3 style="font-family:Newsreader,Georgia,serif;font-weight:500;font-size:20px;line-height:1.28;letter-spacing:-0.01em;margin:0 0 6px;text-wrap:pretty">Handheld mapping of specular surfaces using consumer-grade flash LiDAR</h3>
         <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12.5px;line-height:1.55;color:#6C6558;margin:0">Tsung-Han (Hank) Lin, Connor Henley, Siddharth Somasundaram, Akshat Dave, Moshe Laifenfeld, Ramesh Raskar</p>
@@ -162,7 +168,7 @@ input::placeholder{color:#A39B8A}
         <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:#4A453B">ICCP</span>
         <span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#8A5F0B"></span>
       </div></a>
-<a href="http://platonerf.github.io" class="prow" data-topics="3d nlos" data-sort="202406" data-text="platonerf: 3d reconstruction in plato's cave via single-view two-bounce lidar tzofi klinghoffer, xiaoyu xiang, siddharth somasundaram, yuchen fan, christian richardt, ramesh raskar, rakesh ranjan cvpr" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2024</span>
+<a href="http://platonerf.github.io" class="prow" data-topics="3d nlos" data-sort="202406" data-text="platonerf: 3d reconstruction in plato's cave via single-view two-bounce lidar tzofi klinghoffer, xiaoyu xiang, siddharth somasundaram, yuchen fan, christian richardt, ramesh raskar, rakesh ranjan cvpr" data-m="row" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2024</span>
       <div>
         <h3 style="font-family:Newsreader,Georgia,serif;font-weight:500;font-size:20px;line-height:1.28;letter-spacing:-0.01em;margin:0 0 6px;text-wrap:pretty">PlatoNeRF: 3D Reconstruction in Plato's Cave via Single-View Two-Bounce LiDAR</h3>
         <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12.5px;line-height:1.55;color:#6C6558;margin:0">Tzofi Klinghoffer, Xiaoyu Xiang, Siddharth Somasundaram, Yuchen Fan, Christian Richardt, Ramesh Raskar, Rakesh Ranjan</p>
@@ -171,7 +177,7 @@ input::placeholder{color:#A39B8A}
         <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:#4A453B">CVPR</span>
         <span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#8A5F0B"></span>
       </div></a>
-<a href="https://www.tzofi.com/diser/" class="prow" data-topics="systems" data-sort="202310" data-text="diser: designing imaging systems with reinforcement learning tzofi klinghoffer, kushagra tiwary, nikhil behari, bhavya agrawalla, ramesh raskar iccv" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2023</span>
+<a href="https://www.tzofi.com/diser/" class="prow" data-topics="systems" data-sort="202310" data-text="diser: designing imaging systems with reinforcement learning tzofi klinghoffer, kushagra tiwary, nikhil behari, bhavya agrawalla, ramesh raskar iccv" data-m="row" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2023</span>
       <div>
         <h3 style="font-family:Newsreader,Georgia,serif;font-weight:500;font-size:20px;line-height:1.28;letter-spacing:-0.01em;margin:0 0 6px;text-wrap:pretty">DISeR: Designing Imaging Systems with Reinforcement Learning</h3>
         <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12.5px;line-height:1.55;color:#6C6558;margin:0">Tzofi Klinghoffer, Kushagra Tiwary, Nikhil Behari, Bhavya Agrawalla, Ramesh Raskar</p>
@@ -180,7 +186,7 @@ input::placeholder{color:#A39B8A}
         <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:#4A453B">ICCV</span>
         <span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#8A5F0B"></span>
       </div></a>
-<a href="https://arxiv.org/abs/2304.01308" class="prow" data-topics="nlos" data-sort="202306" data-text="role of transients in two-bounce non-line-of-sight imaging siddharth somasundaram, akshat dave, connor henley, ashok veeraraghavan, ramesh raskar cvpr" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2023</span>
+<a href="https://arxiv.org/abs/2304.01308" class="prow" data-topics="nlos" data-sort="202306" data-text="role of transients in two-bounce non-line-of-sight imaging siddharth somasundaram, akshat dave, connor henley, ashok veeraraghavan, ramesh raskar cvpr" data-m="row" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2023</span>
       <div>
         <h3 style="font-family:Newsreader,Georgia,serif;font-weight:500;font-size:20px;line-height:1.28;letter-spacing:-0.01em;margin:0 0 6px;text-wrap:pretty">Role of transients in two-bounce non-line-of-sight imaging</h3>
         <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12.5px;line-height:1.55;color:#6C6558;margin:0">Siddharth Somasundaram, Akshat Dave, Connor Henley, Ashok Veeraraghavan, Ramesh Raskar</p>
@@ -189,7 +195,7 @@ input::placeholder{color:#A39B8A}
         <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:#4A453B">CVPR</span>
         <span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#8A5F0B"></span>
       </div></a>
-<a href="https://www.computer.org/csdl/proceedings-article/iccp/2022/09887681/1GZizoLJhqE" class="prow" data-topics="systems" data-sort="202208" data-text="physics vs. learned priors: rethinking camera and algorithm design for task-specific imaging tzofi klinghoffer, siddharth somasundaram, kushagra tiwary, ramesh raskar iccp" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2022</span>
+<a href="https://www.computer.org/csdl/proceedings-article/iccp/2022/09887681/1GZizoLJhqE" class="prow" data-topics="systems" data-sort="202208" data-text="physics vs. learned priors: rethinking camera and algorithm design for task-specific imaging tzofi klinghoffer, siddharth somasundaram, kushagra tiwary, ramesh raskar iccp" data-m="row" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2022</span>
       <div>
         <h3 style="font-family:Newsreader,Georgia,serif;font-weight:500;font-size:20px;line-height:1.28;letter-spacing:-0.01em;margin:0 0 6px;text-wrap:pretty">Physics vs. Learned Priors: Rethinking Camera and Algorithm Design for Task-Specific Imaging</h3>
         <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12.5px;line-height:1.55;color:#6C6558;margin:0">Tzofi Klinghoffer, Siddharth Somasundaram, Kushagra Tiwary, Ramesh Raskar</p>
@@ -198,7 +204,7 @@ input::placeholder{color:#A39B8A}
         <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:#4A453B">ICCP</span>
         <span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#8A5F0B"></span>
       </div></a>
-<a href="https://www.media.mit.edu/projects/bounce-flash-lidar/overview/" class="prow" data-topics="3d" data-sort="202201" data-text="bounce-flash lidar connor henley, joseph hollmann, ramesh raskar ieee trans. computational imaging" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2022</span>
+<a href="https://www.media.mit.edu/projects/bounce-flash-lidar/overview/" class="prow" data-topics="3d" data-sort="202201" data-text="bounce-flash lidar connor henley, joseph hollmann, ramesh raskar ieee trans. computational imaging" data-m="row" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2022</span>
       <div>
         <h3 style="font-family:Newsreader,Georgia,serif;font-weight:500;font-size:20px;line-height:1.28;letter-spacing:-0.01em;margin:0 0 6px;text-wrap:pretty">Bounce-flash LiDAR</h3>
         <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12.5px;line-height:1.55;color:#6C6558;margin:0">Connor Henley, Joseph Hollmann, Ramesh Raskar</p>
@@ -207,7 +213,7 @@ input::placeholder{color:#A39B8A}
         <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:#4A453B">IEEE Trans. Computational Imaging</span>
         <span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#8A5F0B"></span>
       </div></a>
-<a href="https://ieeexplore.ieee.org/document/8747343" class="prow" data-topics="nlos" data-sort="201905" data-text="thermal non-line-of-sight imaging tomohiro maeda, yiqin wang, ramesh raskar, achuta kadambi iccp" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2019</span>
+<a href="https://ieeexplore.ieee.org/document/8747343" class="prow" data-topics="nlos" data-sort="201905" data-text="thermal non-line-of-sight imaging tomohiro maeda, yiqin wang, ramesh raskar, achuta kadambi iccp" data-m="row" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2019</span>
       <div>
         <h3 style="font-family:Newsreader,Georgia,serif;font-weight:500;font-size:20px;line-height:1.28;letter-spacing:-0.01em;margin:0 0 6px;text-wrap:pretty">Thermal Non-Line-of-Sight Imaging</h3>
         <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12.5px;line-height:1.55;color:#6C6558;margin:0">Tomohiro Maeda, Yiqin Wang, Ramesh Raskar, Achuta Kadambi</p>
@@ -216,7 +222,7 @@ input::placeholder{color:#A39B8A}
         <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:#4A453B">ICCP</span>
         <span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#8A5F0B"></span>
       </div></a>
-<a href="https://arxiv.org/abs/1810.11710" class="prow" data-topics="nlos" data-sort="201810" data-text="flash photography for data-driven hidden scene recovery matthew tancik, guy satat, ramesh raskar arxiv 1810.11710" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2018</span>
+<a href="https://arxiv.org/abs/1810.11710" class="prow" data-topics="nlos" data-sort="201810" data-text="flash photography for data-driven hidden scene recovery matthew tancik, guy satat, ramesh raskar arxiv 1810.11710" data-m="row" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2018</span>
       <div>
         <h3 style="font-family:Newsreader,Georgia,serif;font-weight:500;font-size:20px;line-height:1.28;letter-spacing:-0.01em;margin:0 0 6px;text-wrap:pretty">Flash Photography for Data-Driven Hidden Scene Recovery</h3>
         <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12.5px;line-height:1.55;color:#6C6558;margin:0">Matthew Tancik, Guy Satat, Ramesh Raskar</p>
@@ -225,7 +231,7 @@ input::placeholder{color:#A39B8A}
         <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:#4A453B">arXiv 1810.11710</span>
         <span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#8A5F0B"></span>
       </div></a>
-<a href="https://www.nature.com/articles/s41566-018-0234-0" class="prow" data-topics="transient" data-sort="201808" data-text="photography optics in the time dimension barmak heshmat, matthew tancik, guy satat, ramesh raskar nature photonics" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2018</span>
+<a href="https://www.nature.com/articles/s41566-018-0234-0" class="prow" data-topics="transient" data-sort="201808" data-text="photography optics in the time dimension barmak heshmat, matthew tancik, guy satat, ramesh raskar nature photonics" data-m="row" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2018</span>
       <div>
         <h3 style="font-family:Newsreader,Georgia,serif;font-weight:500;font-size:20px;line-height:1.28;letter-spacing:-0.01em;margin:0 0 6px;text-wrap:pretty">Photography optics in the time dimension</h3>
         <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12.5px;line-height:1.55;color:#6C6558;margin:0">Barmak Heshmat, Matthew Tancik, Guy Satat, Ramesh Raskar</p>
@@ -234,7 +240,7 @@ input::placeholder{color:#A39B8A}
         <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:#4A453B">Nature Photonics</span>
         <span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#8A5F0B"></span>
       </div></a>
-<a href="https://ieeexplore.ieee.org/abstract/document/8368463" class="prow" data-topics="scattering" data-sort="201805" data-text="towards photography through realistic fog guy satat, matthew tancik, ramesh raskar iccp" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2018</span>
+<a href="https://ieeexplore.ieee.org/abstract/document/8368463" class="prow" data-topics="scattering" data-sort="201805" data-text="towards photography through realistic fog guy satat, matthew tancik, ramesh raskar iccp" data-m="row" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2018</span>
       <div>
         <h3 style="font-family:Newsreader,Georgia,serif;font-weight:500;font-size:20px;line-height:1.28;letter-spacing:-0.01em;margin:0 0 6px;text-wrap:pretty">Towards photography through realistic fog</h3>
         <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12.5px;line-height:1.55;color:#6C6558;margin:0">Guy Satat, Matthew Tancik, Ramesh Raskar</p>
@@ -243,7 +249,7 @@ input::placeholder{color:#A39B8A}
         <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:#4A453B">ICCP</span>
         <span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#8A5F0B"></span>
       </div></a>
-<a href="https://ieeexplore.ieee.org/document/8368471" class="prow" data-topics="systems" data-sort="201804" data-text="dynamic heterodyne interferometry tomohiro maeda, achuta kadambi, yoav y. schechner, ramesh raskar iccp" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2018</span>
+<a href="https://ieeexplore.ieee.org/document/8368471" class="prow" data-topics="systems" data-sort="201804" data-text="dynamic heterodyne interferometry tomohiro maeda, achuta kadambi, yoav y. schechner, ramesh raskar iccp" data-m="row" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2018</span>
       <div>
         <h3 style="font-family:Newsreader,Georgia,serif;font-weight:500;font-size:20px;line-height:1.28;letter-spacing:-0.01em;margin:0 0 6px;text-wrap:pretty">Dynamic heterodyne interferometry</h3>
         <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12.5px;line-height:1.55;color:#6C6558;margin:0">Tomohiro Maeda, Achuta Kadambi, Yoav Y. Schechner, Ramesh Raskar</p>
@@ -252,7 +258,7 @@ input::placeholder{color:#A39B8A}
         <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:#4A453B">ICCP</span>
         <span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#8A5F0B"></span>
       </div></a>
-<a href="https://opg.optica.org/oe/fulltext.cfm?uri=oe-25-15-17466&amp;id=369364" class="prow" data-topics="scattering" data-sort="201707" data-text="object classification through scattering media with deep learning on time resolved measurement guy satat, matthew tancik, otkrist gupta, barmak heshmat, ramesh raskar optics express" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2017</span>
+<a href="https://opg.optica.org/oe/fulltext.cfm?uri=oe-25-15-17466&amp;id=369364" class="prow" data-topics="scattering" data-sort="201707" data-text="object classification through scattering media with deep learning on time resolved measurement guy satat, matthew tancik, otkrist gupta, barmak heshmat, ramesh raskar optics express" data-m="row" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2017</span>
       <div>
         <h3 style="font-family:Newsreader,Georgia,serif;font-weight:500;font-size:20px;line-height:1.28;letter-spacing:-0.01em;margin:0 0 6px;text-wrap:pretty">Object classification through scattering media with deep learning on time resolved measurement</h3>
         <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12.5px;line-height:1.55;color:#6C6558;margin:0">Guy Satat, Matthew Tancik, Otkrist Gupta, Barmak Heshmat, Ramesh Raskar</p>
@@ -261,7 +267,7 @@ input::placeholder{color:#A39B8A}
         <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:#4A453B">Optics Express</span>
         <span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#8A5F0B"></span>
       </div></a>
-<a href="https://ieeexplore.ieee.org/document/8114178" class="prow" data-topics="systems tof" data-sort="201702" data-text="rethinking machine vision time of flight with ghz heterodyning achuta kadambi, ramesh raskar ieee access" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2017</span>
+<a href="https://ieeexplore.ieee.org/document/8114178" class="prow" data-topics="systems tof" data-sort="201702" data-text="rethinking machine vision time of flight with ghz heterodyning achuta kadambi, ramesh raskar ieee access" data-m="row" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2017</span>
       <div>
         <h3 style="font-family:Newsreader,Georgia,serif;font-weight:500;font-size:20px;line-height:1.28;letter-spacing:-0.01em;margin:0 0 6px;text-wrap:pretty">Rethinking Machine Vision Time of Flight with GHz Heterodyning</h3>
         <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12.5px;line-height:1.55;color:#6C6558;margin:0">Achuta Kadambi, Ramesh Raskar</p>
@@ -270,7 +276,7 @@ input::placeholder{color:#A39B8A}
         <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:#4A453B">IEEE Access</span>
         <span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#8A5F0B"></span>
       </div></a>
-<a href="https://dl.acm.org/doi/10.1007/s11263-017-1025-7" class="prow" data-topics="3d" data-sort="201701" data-text="depth sensing using geometrically constrained polarization normals achuta kadambi, vage taamazyan, boxin shi, ramesh raskar int. journal of computer vision" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2017</span>
+<a href="https://dl.acm.org/doi/10.1007/s11263-017-1025-7" class="prow" data-topics="3d" data-sort="201701" data-text="depth sensing using geometrically constrained polarization normals achuta kadambi, vage taamazyan, boxin shi, ramesh raskar int. journal of computer vision" data-m="row" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2017</span>
       <div>
         <h3 style="font-family:Newsreader,Georgia,serif;font-weight:500;font-size:20px;line-height:1.28;letter-spacing:-0.01em;margin:0 0 6px;text-wrap:pretty">Depth Sensing Using Geometrically Constrained Polarization Normals</h3>
         <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12.5px;line-height:1.55;color:#6C6558;margin:0">Achuta Kadambi, Vage Taamazyan, Boxin Shi, Ramesh Raskar</p>
@@ -279,7 +285,7 @@ input::placeholder{color:#A39B8A}
         <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:#4A453B">Int. Journal of Computer Vision</span>
         <span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#8A5F0B"></span>
       </div></a>
-<a href="https://www.nature.com/articles/srep33946" class="prow" data-topics="scattering" data-sort="201609" data-text="all photons imaging through volumetric scattering guy satat, barmak heshmat, dan raviv, ramesh raskar scientific reports" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2016</span>
+<a href="https://www.nature.com/articles/srep33946" class="prow" data-topics="scattering" data-sort="201609" data-text="all photons imaging through volumetric scattering guy satat, barmak heshmat, dan raviv, ramesh raskar scientific reports" data-m="row" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2016</span>
       <div>
         <h3 style="font-family:Newsreader,Georgia,serif;font-weight:500;font-size:20px;line-height:1.28;letter-spacing:-0.01em;margin:0 0 6px;text-wrap:pretty">All photons imaging through volumetric scattering</h3>
         <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12.5px;line-height:1.55;color:#6C6558;margin:0">Guy Satat, Barmak Heshmat, Dan Raviv, Ramesh Raskar</p>
@@ -288,7 +294,7 @@ input::placeholder{color:#A39B8A}
         <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:#4A453B">Scientific Reports</span>
         <span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#8A5F0B"></span>
       </div></a>
-<a href="https://www.nature.com/articles/ncomms12665" class="prow" data-topics="scattering" data-sort="201608" data-text="terahertz time-gated spectral imaging for content extraction through layered structures albert redo-sanchez, barmak heshmat, alireza aghasi, salman naqvi, mingjie zhang, justin romberg, ramesh raskar nature communications" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2016</span>
+<a href="https://www.nature.com/articles/ncomms12665" class="prow" data-topics="scattering" data-sort="201608" data-text="terahertz time-gated spectral imaging for content extraction through layered structures albert redo-sanchez, barmak heshmat, alireza aghasi, salman naqvi, mingjie zhang, justin romberg, ramesh raskar nature communications" data-m="row" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2016</span>
       <div>
         <h3 style="font-family:Newsreader,Georgia,serif;font-weight:500;font-size:20px;line-height:1.28;letter-spacing:-0.01em;margin:0 0 6px;text-wrap:pretty">Terahertz time-gated spectral imaging for content extraction through layered structures</h3>
         <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12.5px;line-height:1.55;color:#6C6558;margin:0">Albert Redo-Sanchez, Barmak Heshmat, Alireza Aghasi, Salman Naqvi, Mingjie Zhang, Justin Romberg, Ramesh Raskar</p>
@@ -297,7 +303,7 @@ input::placeholder{color:#A39B8A}
         <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:#4A453B">Nature Communications</span>
         <span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#8A5F0B"></span>
       </div></a>
-<div class="prow" data-topics="3d tof" data-sort="201512" data-text="polarized 3d: high-quality depth sensing with polarization cues achuta kadambi, vage taamazyan, boxin shi, ramesh raskar iccv" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2015</span>
+<div class="prow" data-topics="3d tof" data-sort="201512" data-text="polarized 3d: high-quality depth sensing with polarization cues achuta kadambi, vage taamazyan, boxin shi, ramesh raskar iccv" data-m="row" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2015</span>
       <div>
         <h3 style="font-family:Newsreader,Georgia,serif;font-weight:500;font-size:20px;line-height:1.28;letter-spacing:-0.01em;margin:0 0 6px;text-wrap:pretty">Polarized 3D: High-Quality Depth Sensing with Polarization Cues</h3>
         <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12.5px;line-height:1.55;color:#6C6558;margin:0">Achuta Kadambi, Vage Taamazyan, Boxin Shi, Ramesh Raskar</p>
@@ -306,7 +312,7 @@ input::placeholder{color:#A39B8A}
         <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:#4A453B">ICCV</span>
         <span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#8A5F0B">Oral · Link needed</span>
       </div></div>
-<a href="https://ieeexplore.ieee.org/document/7298602" class="prow" data-topics="3d tof" data-sort="201506" data-text="a light transport model for mitigating multipath interference in time-of-flight sensors nikhil naik, achuta kadambi, christoph rhemann, shahram izadi, ramesh raskar, sing bing kang cvpr" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2015</span>
+<a href="https://ieeexplore.ieee.org/document/7298602" class="prow" data-topics="3d tof" data-sort="201506" data-text="a light transport model for mitigating multipath interference in time-of-flight sensors nikhil naik, achuta kadambi, christoph rhemann, shahram izadi, ramesh raskar, sing bing kang cvpr" data-m="row" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2015</span>
       <div>
         <h3 style="font-family:Newsreader,Georgia,serif;font-weight:500;font-size:20px;line-height:1.28;letter-spacing:-0.01em;margin:0 0 6px;text-wrap:pretty">A Light Transport Model for Mitigating Multipath Interference in Time-of-Flight Sensors</h3>
         <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12.5px;line-height:1.55;color:#6C6558;margin:0">Nikhil Naik, Achuta Kadambi, Christoph Rhemann, Shahram Izadi, Ramesh Raskar, Sing Bing Kang</p>
@@ -315,7 +321,7 @@ input::placeholder{color:#A39B8A}
         <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:#4A453B">CVPR</span>
         <span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#8A5F0B"></span>
       </div></a>
-<a href="https://www.nature.com/articles/ncomms7796" class="prow" data-topics="scattering" data-sort="201504" data-text="locating and classifying fluorescent tags behind turbid layers using time-resolved inversion guy satat, barmak heshmat, christopher barsi, dan raviv, ou chen, moungi g. bawendi, ramesh raskar nature communications" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2015</span>
+<a href="https://www.nature.com/articles/ncomms7796" class="prow" data-topics="scattering" data-sort="201504" data-text="locating and classifying fluorescent tags behind turbid layers using time-resolved inversion guy satat, barmak heshmat, christopher barsi, dan raviv, ou chen, moungi g. bawendi, ramesh raskar nature communications" data-m="row" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2015</span>
       <div>
         <h3 style="font-family:Newsreader,Georgia,serif;font-weight:500;font-size:20px;line-height:1.28;letter-spacing:-0.01em;margin:0 0 6px;text-wrap:pretty">Locating and classifying fluorescent tags behind turbid layers using time-resolved inversion</h3>
         <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12.5px;line-height:1.55;color:#6C6558;margin:0">Guy Satat, Barmak Heshmat, Christopher Barsi, Dan Raviv, Ou Chen, Moungi G. Bawendi, Ramesh Raskar</p>
@@ -324,7 +330,7 @@ input::placeholder{color:#A39B8A}
         <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:#4A453B">Nature Communications</span>
         <span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#8A5F0B"></span>
       </div></a>
-<a href="https://opg.optica.org/oe/abstract.cfm?uri=oe-22-17-20164" class="prow" data-topics="scattering" data-sort="201408" data-text="pose estimation using time-resolved inversion of diffuse light dan raviv, christopher barsi, nikhil naik, micha feigin, ramesh raskar optics express" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2014</span>
+<a href="https://opg.optica.org/oe/abstract.cfm?uri=oe-22-17-20164" class="prow" data-topics="scattering" data-sort="201408" data-text="pose estimation using time-resolved inversion of diffuse light dan raviv, christopher barsi, nikhil naik, micha feigin, ramesh raskar optics express" data-m="row" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2014</span>
       <div>
         <h3 style="font-family:Newsreader,Georgia,serif;font-weight:500;font-size:20px;line-height:1.28;letter-spacing:-0.01em;margin:0 0 6px;text-wrap:pretty">Pose estimation using time-resolved inversion of diffuse light</h3>
         <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12.5px;line-height:1.55;color:#6C6558;margin:0">Dan Raviv, Christopher Barsi, Nikhil Naik, Micha Feigin, Ramesh Raskar</p>
@@ -333,7 +339,7 @@ input::placeholder{color:#A39B8A}
         <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:#4A453B">Optics Express</span>
         <span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#8A5F0B"></span>
       </div></a>
-<a href="https://ieeexplore.ieee.org/document/6831811" class="prow" data-topics="systems tof" data-sort="201405" data-text="demultiplexing illumination via low-cost sensing and nanosecond coding achuta kadambi, ayush bhandari, refael whyte, adrian dorrington, ramesh raskar iccp" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2014</span>
+<a href="https://ieeexplore.ieee.org/document/6831811" class="prow" data-topics="systems tof" data-sort="201405" data-text="demultiplexing illumination via low-cost sensing and nanosecond coding achuta kadambi, ayush bhandari, refael whyte, adrian dorrington, ramesh raskar iccp" data-m="row" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2014</span>
       <div>
         <h3 style="font-family:Newsreader,Georgia,serif;font-weight:500;font-size:20px;line-height:1.28;letter-spacing:-0.01em;margin:0 0 6px;text-wrap:pretty">Demultiplexing Illumination via Low-Cost Sensing and Nanosecond Coding</h3>
         <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12.5px;line-height:1.55;color:#6C6558;margin:0">Achuta Kadambi, Ayush Bhandari, Refael Whyte, Adrian Dorrington, Ramesh Raskar</p>
@@ -342,7 +348,7 @@ input::placeholder{color:#A39B8A}
         <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:#4A453B">ICCP</span>
         <span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#8A5F0B"></span>
       </div></a>
-<a href="https://pubmed.ncbi.nlm.nih.gov/24979621/" class="prow" data-topics="transient" data-sort="201404" data-text="estimating wide-angle, spatially varying reflectance using time-resolved inversion of backscattered light nikhil naik, christopher barsi, andreas velten, ramesh raskar josa a" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2014</span>
+<a href="https://pubmed.ncbi.nlm.nih.gov/24979621/" class="prow" data-topics="transient" data-sort="201404" data-text="estimating wide-angle, spatially varying reflectance using time-resolved inversion of backscattered light nikhil naik, christopher barsi, andreas velten, ramesh raskar josa a" data-m="row" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2014</span>
       <div>
         <h3 style="font-family:Newsreader,Georgia,serif;font-weight:500;font-size:20px;line-height:1.28;letter-spacing:-0.01em;margin:0 0 6px;text-wrap:pretty">Estimating wide-angle, spatially varying reflectance using time-resolved inversion of backscattered light</h3>
         <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12.5px;line-height:1.55;color:#6C6558;margin:0">Nikhil Naik, Christopher Barsi, Andreas Velten, Ramesh Raskar</p>
@@ -351,7 +357,7 @@ input::placeholder{color:#A39B8A}
         <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:#4A453B">JOSA A</span>
         <span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#8A5F0B"></span>
       </div></a>
-<a href="https://arxiv.org/abs/1404.1116" class="prow" data-topics="3d tof" data-sort="201403" data-text="resolving multi-path interference in time-of-flight imaging via modulation frequency diversity and sparse regularization ayush bhandari, achuta kadambi, refael whyte, christopher barsi, micha feigin, adrian dorrington, ramesh raskar optics letters" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2014</span>
+<a href="https://arxiv.org/abs/1404.1116" class="prow" data-topics="3d tof" data-sort="201403" data-text="resolving multi-path interference in time-of-flight imaging via modulation frequency diversity and sparse regularization ayush bhandari, achuta kadambi, refael whyte, christopher barsi, micha feigin, adrian dorrington, ramesh raskar optics letters" data-m="row" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2014</span>
       <div>
         <h3 style="font-family:Newsreader,Georgia,serif;font-weight:500;font-size:20px;line-height:1.28;letter-spacing:-0.01em;margin:0 0 6px;text-wrap:pretty">Resolving multi-path interference in time-of-flight imaging via modulation frequency diversity and sparse regularization</h3>
         <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12.5px;line-height:1.55;color:#6C6558;margin:0">Ayush Bhandari, Achuta Kadambi, Refael Whyte, Christopher Barsi, Micha Feigin, Adrian Dorrington, Ramesh Raskar</p>
@@ -360,7 +366,7 @@ input::placeholder{color:#A39B8A}
         <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:#4A453B">Optics Letters</span>
         <span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#8A5F0B"></span>
       </div></a>
-<a href="https://dl.acm.org/doi/10.1145/2508363.2508428" class="prow" data-topics="transient 3d tof" data-sort="201311" data-text="coded time of flight cameras: sparse deconvolution to address multipath interference and recover time profiles achuta kadambi, refael whyte, ayush bhandari, lee streeter, christopher barsi, adrian dorrington, ramesh raskar acm trans. graphics · siggraph asia" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2013</span>
+<a href="https://dl.acm.org/doi/10.1145/2508363.2508428" class="prow" data-topics="transient 3d tof" data-sort="201311" data-text="coded time of flight cameras: sparse deconvolution to address multipath interference and recover time profiles achuta kadambi, refael whyte, ayush bhandari, lee streeter, christopher barsi, adrian dorrington, ramesh raskar acm trans. graphics · siggraph asia" data-m="row" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2013</span>
       <div>
         <h3 style="font-family:Newsreader,Georgia,serif;font-weight:500;font-size:20px;line-height:1.28;letter-spacing:-0.01em;margin:0 0 6px;text-wrap:pretty">Coded time of flight cameras: sparse deconvolution to address multipath interference and recover time profiles</h3>
         <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12.5px;line-height:1.55;color:#6C6558;margin:0">Achuta Kadambi, Refael Whyte, Ayush Bhandari, Lee Streeter, Christopher Barsi, Adrian Dorrington, Ramesh Raskar</p>
@@ -369,7 +375,7 @@ input::placeholder{color:#A39B8A}
         <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:#4A453B">ACM Trans. Graphics · SIGGRAPH Asia</span>
         <span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#8A5F0B"></span>
       </div></a>
-<a href="https://dl.acm.org/doi/abs/10.1145/2461912.2461928" class="prow" data-topics="transient" data-sort="201307" data-text="femto-photography: capturing and visualizing the propagation of light andreas velten, di wu, adrián jarabo, belén masiá, christopher barsi, chinmaya joshi, everett lawson, moungi bawendi, diego gutierrez, ramesh raskar acm trans. graphics · siggraph" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2013</span>
+<a href="https://dl.acm.org/doi/abs/10.1145/2461912.2461928" class="prow" data-topics="transient" data-sort="201307" data-text="femto-photography: capturing and visualizing the propagation of light andreas velten, di wu, adrián jarabo, belén masiá, christopher barsi, chinmaya joshi, everett lawson, moungi bawendi, diego gutierrez, ramesh raskar acm trans. graphics · siggraph" data-m="row" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2013</span>
       <div>
         <h3 style="font-family:Newsreader,Georgia,serif;font-weight:500;font-size:20px;line-height:1.28;letter-spacing:-0.01em;margin:0 0 6px;text-wrap:pretty">Femto-photography: capturing and visualizing the propagation of light</h3>
         <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12.5px;line-height:1.55;color:#6C6558;margin:0">Andreas Velten, Di Wu, Adrián Jarabo, Belén Masiá, Christopher Barsi, Chinmaya Joshi, Everett Lawson, Moungi Bawendi, Diego Gutierrez, Ramesh Raskar</p>
@@ -378,7 +384,7 @@ input::placeholder{color:#A39B8A}
         <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:#4A453B">ACM Trans. Graphics · SIGGRAPH</span>
         <span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#8A5F0B">Test of Time Award</span>
       </div></a>
-<a href="https://www.nature.com/articles/ncomms1747" class="prow" data-topics="nlos" data-sort="201203" data-text="recovering three-dimensional shape around a corner using ultrafast time-of-flight imaging andreas velten, thomas willwacher, otkrist gupta, ashok veeraraghavan, moungi g. bawendi, ramesh raskar nature communications" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2012</span>
+<a href="https://www.nature.com/articles/ncomms1747" class="prow" data-topics="nlos" data-sort="201203" data-text="recovering three-dimensional shape around a corner using ultrafast time-of-flight imaging andreas velten, thomas willwacher, otkrist gupta, ashok veeraraghavan, moungi g. bawendi, ramesh raskar nature communications" data-m="row" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2012</span>
       <div>
         <h3 style="font-family:Newsreader,Georgia,serif;font-weight:500;font-size:20px;line-height:1.28;letter-spacing:-0.01em;margin:0 0 6px;text-wrap:pretty">Recovering three-dimensional shape around a corner using ultrafast time-of-flight imaging</h3>
         <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12.5px;line-height:1.55;color:#6C6558;margin:0">Andreas Velten, Thomas Willwacher, Otkrist Gupta, Ashok Veeraraghavan, Moungi G. Bawendi, Ramesh Raskar</p>
@@ -387,7 +393,7 @@ input::placeholder{color:#A39B8A}
         <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:#4A453B">Nature Communications</span>
         <span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#8A5F0B"></span>
       </div></a>
-<a href="https://dl.acm.org/doi/10.1145/2024156.2024205" class="prow" data-topics="transient" data-sort="201112" data-text="single view reflectance capture using multiplexed scattering and time-of-flight imaging nikhil naik, shuang zhao, andreas velten, ramesh raskar, kavita bala siggraph asia" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2011</span>
+<a href="https://dl.acm.org/doi/10.1145/2024156.2024205" class="prow" data-topics="transient" data-sort="201112" data-text="single view reflectance capture using multiplexed scattering and time-of-flight imaging nikhil naik, shuang zhao, andreas velten, ramesh raskar, kavita bala siggraph asia" data-m="row" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2011</span>
       <div>
         <h3 style="font-family:Newsreader,Georgia,serif;font-weight:500;font-size:20px;line-height:1.28;letter-spacing:-0.01em;margin:0 0 6px;text-wrap:pretty">Single view reflectance capture using multiplexed scattering and time-of-flight imaging</h3>
         <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12.5px;line-height:1.55;color:#6C6558;margin:0">Nikhil Naik, Shuang Zhao, Andreas Velten, Ramesh Raskar, Kavita Bala</p>
@@ -396,7 +402,7 @@ input::placeholder{color:#A39B8A}
         <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:#4A453B">SIGGRAPH Asia</span>
         <span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#8A5F0B"></span>
       </div></a>
-<a href="https://ieeexplore.ieee.org/abstract/document/5459160" class="prow" data-topics="nlos" data-sort="200910" data-text="looking around the corner using transient imaging ahmed kirmani, tyler hutchison, james davis, ramesh raskar iccv" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2009</span>
+<a href="https://ieeexplore.ieee.org/abstract/document/5459160" class="prow" data-topics="nlos" data-sort="200910" data-text="looking around the corner using transient imaging ahmed kirmani, tyler hutchison, james davis, ramesh raskar iccv" data-m="row" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2009</span>
       <div>
         <h3 style="font-family:Newsreader,Georgia,serif;font-weight:500;font-size:20px;line-height:1.28;letter-spacing:-0.01em;margin:0 0 6px;text-wrap:pretty">Looking around the corner using transient imaging</h3>
         <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12.5px;line-height:1.55;color:#6C6558;margin:0">Ahmed Kirmani, Tyler Hutchison, James Davis, Ramesh Raskar</p>
@@ -405,7 +411,7 @@ input::placeholder{color:#A39B8A}
         <span style="font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:#4A453B">ICCV</span>
         <span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#8A5F0B">Marr Prize, Hon. Mention</span>
       </div></a>
-<a href="https://www.semanticscholar.org/paper/5d-time-light-transport-matrix%3A-What-can-we-reason-Ramesh-Davis/33c71164a4edd0fe1fb336e71c4754aab16e46f9" class="prow" data-topics="transient" data-sort="200801" data-text="5d time-light transport matrix: what can we reason about scene properties? ramesh raskar, james davis mit technical report" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2008</span>
+<a href="https://www.semanticscholar.org/paper/5d-time-light-transport-matrix%3A-What-can-we-reason-Ramesh-Davis/33c71164a4edd0fe1fb336e71c4754aab16e46f9" class="prow" data-topics="transient" data-sort="200801" data-text="5d time-light transport matrix: what can we reason about scene properties? ramesh raskar, james davis mit technical report" data-m="row" style="display:grid;grid-template-columns:64px minmax(0,1fr) 200px;gap:24px;padding:22px 12px 22px 0;border-bottom:1px solid #E2DBCC;text-decoration:none;color:#171512;align-items:start"><span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:0.04em;color:#8A5F0B;padding-top:5px">2008</span>
       <div>
         <h3 style="font-family:Newsreader,Georgia,serif;font-weight:500;font-size:20px;line-height:1.28;letter-spacing:-0.01em;margin:0 0 6px;text-wrap:pretty">5D Time-Light Transport Matrix: What Can We Reason About Scene Properties?</h3>
         <p style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12.5px;line-height:1.55;color:#6C6558;margin:0">Ramesh Raskar, James Davis</p>
@@ -419,9 +425,9 @@ input::placeholder{color:#A39B8A}
 
   </section>
 
-  <div style="height:104px"></div>
-  <footer style="background:#14120E;color:#EFEAE0;padding:64px 32px 40px">
-  <div style="max-width:1180px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr) minmax(0,1fr);gap:48px">
+  <div data-m="spacer" style="height:104px"></div>
+  <footer data-m="px" style="background:#14120E;color:#EFEAE0;padding:64px 32px 40px">
+  <div data-m="stack" style="max-width:1180px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr) minmax(0,1fr);gap:48px">
     <div>
       <div style="font-family:Newsreader,Georgia,serif;font-size:22px;font-weight:500;letter-spacing:-0.01em">Extreme Sensing with Single Photons</div>
       <p style="font-family:Newsreader,Georgia,serif;font-size:15px;line-height:1.6;color:#9A9384;max-width:34ch;margin:14px 0 0">Camera Culture Group, MIT Media Lab. Transient, time-of-flight and single-photon imaging research.</p>
@@ -429,23 +435,23 @@ input::placeholder{color:#A39B8A}
     </div>
     <nav style="display:flex;flex-direction:column;gap:9px">
       <span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:#8C8574;margin-bottom:5px">The work</span>
-      <a href="projects.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13.5px;color:#CFC8B8;text-decoration:none" class="hv3">Projects</a>
-      <a href="papers.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13.5px;color:#CFC8B8;text-decoration:none" class="hv3">Papers</a>
-      <a href="spad-kit.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13.5px;color:#CFC8B8;text-decoration:none" class="hv3">SPAD Kit</a>
-      <a href="resources.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13.5px;color:#CFC8B8;text-decoration:none" class="hv3">Resources</a>
+      <a href="projects.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13.5px;color:#CFC8B8;text-decoration:none" class="hv103">Projects</a>
+      <a href="papers.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13.5px;color:#CFC8B8;text-decoration:none" class="hv103">Papers</a>
+      <a href="spad-kit.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13.5px;color:#CFC8B8;text-decoration:none" class="hv103">SPAD Kit</a>
+      <a href="resources.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13.5px;color:#CFC8B8;text-decoration:none" class="hv103">Resources</a>
     </nav>
     <nav style="display:flex;flex-direction:column;gap:9px">
       <span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:#8C8574;margin-bottom:5px">The group</span>
-      <a href="index.html#people" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13.5px;color:#CFC8B8;text-decoration:none" class="hv3">People</a>
-      <a href="media.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13.5px;color:#CFC8B8;text-decoration:none" class="hv3">Media</a>
-      <a href="events.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13.5px;color:#CFC8B8;text-decoration:none" class="hv3">Events</a>
-      <a href="Collaborators.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13.5px;color:#CFC8B8;text-decoration:none" class="hv3">Collaborators</a>
-      <a href="challenge.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13.5px;color:#D9A63C;text-decoration:none" class="hv4">CVPR Challenge</a>
+      <a href="index.html#people" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13.5px;color:#CFC8B8;text-decoration:none" class="hv103">People</a>
+      <a href="media.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13.5px;color:#CFC8B8;text-decoration:none" class="hv103">Media</a>
+      <a href="events.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13.5px;color:#CFC8B8;text-decoration:none" class="hv103">Events</a>
+      <a href="Collaborators.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13.5px;color:#CFC8B8;text-decoration:none" class="hv103">Collaborators</a>
+      <a href="challenge.html" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13.5px;color:#D9A63C;text-decoration:none" class="hv104">CVPR Challenge</a>
     </nav>
   </div>
   <div style="max-width:1180px;margin:48px auto 0;padding-top:20px;border-top:1px solid #2A2620;display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:0.06em;color:#8C8574">
     <span>Camera Culture Group · MIT Media Lab</span>
-    <a href="https://accessibility.mit.edu/" style="color:#8C8574;text-decoration:none" class="hv3">MIT Accessibility</a>
+    <a href="https://accessibility.mit.edu/" style="color:#8C8574;text-decoration:none" class="hv103">MIT Accessibility</a>
   </div>
 </footer>
 </div>
@@ -484,10 +490,10 @@ input::placeholder{color:#A39B8A}
 (function(){
   var page=(location.pathname.split('/').pop()||'index.html')||'index.html';
   [].slice.call(document.querySelectorAll('nav a[data-nav]')).forEach(function(a){
-    if(a.getAttribute('href')===page&&a.getAttribute('data-nav')!=='Challenge'){
-      a.style.color='#171512';a.style.borderBottom='1px solid #8A5F0B';
-    }
+    if(a.getAttribute('href')===page&&a.getAttribute('data-nav')!=='Challenge'){a.style.color='#171512';a.style.borderBottom='1px solid #8A5F0B';}
   });
+  var b=document.getElementById('navbtn'),n=document.getElementById('sitenav');
+  if(b&&n)b.onclick=function(){var o=n.getAttribute('data-open')!=='true';n.setAttribute('data-open',o?'true':'false');b.setAttribute('aria-expanded',o?'true':'false');b.textContent=o?'Close':'Menu';};
 })();
 </script>
 </body>

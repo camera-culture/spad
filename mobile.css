@@ -1,0 +1,22 @@
+/* Phone layout overrides. Elements opt in with data-m="…" tokens. */
+@media (max-width: 900px) {
+  [data-m~="navbtn"] { display: inline-flex !important; }
+  [data-m~="nav"] { display: none !important; }
+  [data-m~="nav"][data-open="true"] { display: flex !important; flex-direction: column; align-items: stretch !important; width: 100%; margin-left: 0 !important; gap: 0 !important; padding: 0 0 16px; }
+  [data-m~="nav"] > a { padding: 13px 0 !important; font-size: 15px !important; border-bottom: 1px solid #E2DBCC !important; }
+  [data-m~="nav"] > a:last-child { align-self: flex-start; margin-top: 14px; padding: 10px 14px !important; font-size: 12px !important; border: 1px solid #DCCBA6 !important; }
+  [data-m~="navbar"] { gap: 0 !important; }
+}
+@media (max-width: 700px) {
+  [data-m~="px"] { padding-left: 20px !important; padding-right: 20px !important; }
+  [data-m~="sec"] { margin-top: 64px !important; }
+  [data-m~="spacer"] { height: 56px !important; }
+  [data-m~="stack"] { grid-template-columns: minmax(0, 1fr) !important; gap: 28px !important; }
+  [data-m~="row"] { grid-template-columns: minmax(0, 1fr) !important; gap: 6px !important; }
+  [data-m~="row"] > * { padding-top: 0 !important; }
+  [data-m~="row2"] { grid-template-columns: auto minmax(0, 1fr) !important; row-gap: 4px !important; }
+  [data-m~="row2"] > :nth-child(3) { grid-column: 1 / -1; }
+  [data-m~="tbl"] { gap: 8px !important; }
+  [data-m~="person"] { flex: 0 1 calc(50% - 10px) !important; min-width: 0 !important; }
+  [data-m~="people"] { gap: 28px 20px !important; }
+}
